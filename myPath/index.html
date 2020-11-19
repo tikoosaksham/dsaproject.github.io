@@ -26,7 +26,6 @@
 						<a class="dropdown-item" href="#">Greedy Best-First Search</a>
 					    <a class="dropdown-item" href="#">Breadth-First Search (BFS)</a>
 					    <a class="dropdown-item" href="#">Depth-First Search (DFS)</a>
-					    <a class="dropdown-item" href="#">Jump Point Search</a>
 					</div>
 		      	</li>
 		      	<li class="nav-item dropdown" id="mazes">
@@ -322,29 +321,6 @@
 				        </p>
 				        <p class="fun-fact">
 				        	<i><b>Fun Fact: </b> A* was first created for the 'Shakey Project', which had the aim of building a mobile robot that could plan its own actions. It was later published in 1968 by Stanford Research Institute scientists.</i>
-				        </p>
-				      </div>
-				    </div>
-				  </div>
-
-				  <div class="card">
-				    <div class="card-header" id="headingSix">
-				      <h5 class="mb-0">
-				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-				          Jump Point Search
-				        </button>
-				      </h5>
-				    </div>
-				    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-				      <div class="card-body">
-				        <p>
-				        	<b>How It Works: </b> Jump Point Search is an optimization of A* for uniform cost grids. It reduces symmertries in the search procedure by graph pruning, which eliminates certain nodes to explore based on the assumptions that can be made about the current node's neighbors (as long as certain conditions are satisfied). My implimentation only considers straight horizontal and vertical 'jumps.' In the original JPS paper, it also considers diagonal jumps, but since my program only moves horizontally and vertically, I decided to not impliment diagonal jumps. This made the algorithm non-optimal, sometimes resulting in the algorithm not being able to find the end node. Despite this, I decided to leave this algorithm in myPath to demonstrate the different types of algorithms out there. 
-				        </p>
-				        <p>
-				        	<b>Analysis: </b> This is a great algorithm for pathfinding when there is an explicit maze drawn. It is <u>weighted</u>, but it does <u>not</u> guarantee the shortest path.
-				        </p>
-				        <p class="fun-fact">
-				        	<i><b>Fun Fact: </b> JPS was first published in 2011, which is more than 40 years after A* was first published.</i>
 				        </p>
 				      </div>
 				    </div>
