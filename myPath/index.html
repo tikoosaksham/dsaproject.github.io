@@ -28,18 +28,15 @@
 					    <a class="dropdown-item" href="#">Depth-First Search (DFS)</a>
 					</div>
 		      	</li>
-		      	<!-- <li class="nav-item dropdown" id="mazes">
+		      	<li class="nav-item dropdown" id="mazes">
 		      		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          	Mazes
 		        	</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					    <a class="dropdown-item" href="#">Random</a>
-					    <a class="dropdown-item" href="#">Recursive Division</a>
-					    <a class="dropdown-item" href="#">Recursive Division (Vertical Skew)</a>
-					    <a class="dropdown-item" href="#">Recursive Division (Horizontal Skew)</a>
 					    <a class="dropdown-item" href="#">Simple Spiral</a>
 					</div>
-				</li> -->
+				</li>
 		      	<li class="nav-item dropdown" id="speed">
 		      		<a class="nav-link dropdown-toggle speedDisplay" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          	Speed: Fast
@@ -96,7 +93,7 @@
 		<button type="button" class="btn btn-outline-info btn-lg" data-toggle="modal" data-target="#exampleModalLong">Tutorial</button>
 
 		<!-- Tutorial Modal -->
-		<!-- <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
@@ -177,13 +174,6 @@
 						<br>
 						<div class="card border-success">
 						  <h5 class="card-header border-success">Enjoy VISUALIZE!</h5>
-						  <div class="card-body">
-						    <p class="card-text"><em>If you want to revisit this tutorial, click the 'Tutorial' button at the end of the page.</em>
-						    <hr>
-						    <p>If you want to see other projects that I've created, check out my github!</p>
-						    </p>
-						    <a href="https://github.com/deckardmehdy" class="btn btn-primary">Github</a>
-						  </div>
 						</div>
 		        	</div>
 		        </div>
@@ -193,7 +183,7 @@
 		      </div>
 		    </div>
 		  </div>
-		</div> -->
+		</div>
 		<!-- Button Trigger for Info Modal -->
 		<button type="button" class="btn btn-outline-success btn-circle btn-lg" data-toggle="modal" data-target="#infoModal" id="infoModalBtn">Info</button>
 
@@ -282,50 +272,6 @@
 				      </div>
 				    </div>
 				  </div>
-
-				  <!-- <div class="card">
-				    <div class="card-header" id="headingFour">
-				      <h5 class="mb-0">
-				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-				          Greedy Best-First Search
-				        </button>
-				      </h5>
-				    </div>
-				    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-				      <div class="card-body">
-				        <p>
-				        	<b>How It Works:</b> GBFS tries to expand the node that is closest to the goal, on the grounds that this is likely to lead to a solution quickly. It evaluates nodes on a heuristic function, which in VISUALIZE is the Euclidean distance from the current node to the end node. 
-				        </p>
-				        <p>
-				        	<b>Analysis: </b>This is a poor algorithm for pathfinding. It is <u>weighted</u> but does <u>not</u> guarantee the shortest path. 
-				        </p>
-				      </div>
-				    </div>
-				  </div>
-
-				  <div class="card">
-				    <div class="card-header" id="headingFive">
-				      <h5 class="mb-0">
-				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-				          A*
-				        </button>
-				      </h5>
-				    </div>
-				    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-				      <div class="card-body">
-				        <p>
-				        	<b>How It Works: </b> A* uses the same min-heap data structure that is implimented in Dijkstra's, but it expands upon Dijkstra's criteria for selecting the next node to explore. Dijkstra's chooses the node with the smallest distance from the starting node to be explored next. However, A* ranks nodes differently: it has a heuristic function that evaluates how far a node has traveled from the starting node <u>and</u> how far it is from the end node. This heuristic function makes the algorithm 'smart' since it is able to expand in a direction of interest. My implimentation of A* uses Euclidean distance for the end node distance calculation.
-				        </p>
-				        <p>
-				        	<b>Analysis: </b> This is the one of the best algorithms for pathfinding. It is <u>weighted</u> and it <u>guarantees</u> the shortest path.
-				        </p>
-				        <p class="fun-fact">
-				        	<i><b>Fun Fact: </b> A* was first created for the 'Shakey Project', which had the aim of building a mobile robot that could plan its own actions. It was later published in 1968 by Stanford Research Institute scientists.</i>
-				        </p>
-				      </div>
-				    </div>
-				  </div>
-				</div>
 		      </div>
 		  	  </div>
 		      <div class="modal-footer">
@@ -334,7 +280,7 @@
 		    </div>
 		  </div>
 		</div>
-	</div> -->
+	</div>
 
 	<div class ="d-flex flex-column" id="results">
 		<div class="d-flex justify-content-center"> 
