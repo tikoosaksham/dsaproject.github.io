@@ -296,10 +296,6 @@ function updateStartBtnText() {
 		$("#startBtn").html("Start BFS");
 	} else if (algorithm == "Dijkstra") {
 		$("#startBtn").html("Start Dijkstra");
-	} else if (algorithm == "A*") {
-		$("#startBtn").html("Start A*");
-	} else if (algorithm == "Greedy Best-First Search") {
-		$("#startBtn").html("Start Greedy BFS");
 	}
 	return;
 }
@@ -354,7 +350,7 @@ async function traverseGraph(algorithm) {
 	inProgress = true;
 	clearBoard(keepWalls = true);
 	var startTime = Date.now();
-	var pathFound = executeAlgo();
+	var pathFound = executeAlgo(algorithm);
 	var endTime = Date.now();
 	await animateCells();
 	if (pathFound) {
@@ -366,7 +362,7 @@ async function traverseGraph(algorithm) {
 	justFinished = true;
 }
 
-function executeAlgo() {
+function executeAlgo(algorithm) {
 	if (algorithm == "Depth-First Search (DFS)") {
 		var visited = createVisited();
 		var pathFound = DFS(startCell[0], startCell[1], visited);
@@ -374,10 +370,6 @@ function executeAlgo() {
 		var pathFound = BFS();
 	} else if (algorithm == "Dijkstra") {
 		var pathFound = dijkstra();
-	} else if (algorithm == "A*") {
-		var pathFound = AStar();
-	} else if (algorithm == "Greedy Best-First Search") {
-		var pathFound = greedyBestFirstSearch();
 	}
 	return pathFound;
 }
