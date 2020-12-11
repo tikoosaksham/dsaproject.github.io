@@ -234,12 +234,6 @@ $("#mazes .dropdown-item").click(function () {
 	maze = $(this).text();
 	if (maze == "Random") {
 		randomMaze();
-	} else if (maze == "Recursive Division") {
-		recursiveDivMaze(null);
-	} else if (maze == "Recursive Division (Vertical Skew)") {
-		recursiveDivMaze("VERTICAL");
-	} else if (maze == "Recursive Division (Horizontal Skew)") {
-		recursiveDivMaze("HORIZONTAL");
 	} else if (maze == "Simple Spiral") {
 		spiralMaze();
 	}
